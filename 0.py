@@ -9,9 +9,15 @@
 import math
 
 print("Problem 0")
-
 # game plan
 # find squares (math.sqrt = whole nr?)
 
-for i in range(742000): # for loop to count up to 742000
+sqCount = 0
+runningTotal = 0
+
+for i in range(sqCount): # for loop to count up to 742000
     if math.sqrt(i) % 2 == 1: # if the square root is odd...
+        sqCount = sqCount + 1 # increase squareCount by 1
+        runningTotal = runningTotal + i
+        if sqCount == 742000:
+            print(runningTotal)
