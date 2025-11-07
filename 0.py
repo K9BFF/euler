@@ -10,6 +10,8 @@ import math
 
 print("Problem 0")
 
-#could modulo to find odd
+# game plan
+# find squares (math.sqrt = whole nr?)
 
-for i in loop:
+for i in range(742000): # for loop to count up to 742000
+    if math.sqrt(i) % 2 == 1: # if the square root is odd...
