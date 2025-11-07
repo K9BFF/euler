@@ -15,9 +15,10 @@ print("Problem 0")
 sqCount = 0
 runningTotal = 0
 
-for i in range(sqCount): # for loop to count up to 742000
+for i in range(sqCount): # for loop to count up to 742000 square numbers
     if math.sqrt(i) % 2 == 1: # if the square root is odd...
         sqCount = sqCount + 1 # increase squareCount by 1
-        runningTotal = runningTotal + i
+        runningTotal = runningTotal + math.sqrt(i)
+
         if sqCount == 742000:
-            print(runningTotal)
+            print("byeah")
